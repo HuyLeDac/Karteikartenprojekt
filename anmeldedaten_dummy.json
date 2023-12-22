@@ -1,16 +1,7 @@
 {
-    "credentials": [
-        {
-            "username": "admin",
-            "password": "password123"
-        },
-        {
-            "username": "user1",
-            "password": "pass123"
-        },
-        {
-            "username": "user2",
-            "password": "pass456"
-        }
-    ]
-}
+    "benutzername1": {"passwort": "passwort1"},
+    "benutzername2": {"passwort": "passwort2"},
+    "benutzername3": {"passwort": "passwort3"},
+    "tinystinkt": {"passwort": "tinystinkt"}
+  }
+  

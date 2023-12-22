@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!-- Verlinke das externe JavaScript-File -->
-    <script src="js/login.js" defer></script>
+    <title>Anmeldung</title>
 </head>
-
 <body>
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <input type="button" value="Login" onclick="performLogin()">
+    <h1>Anmeldung</h1>
+    <form id="anmeldeForm">
+        <label for="benutzername">Benutzername:</label>
+        <input type="text" id="benutzername" name="benutzername" required>
+        <br>
+        <label for="passwort">Passwort:</label>
+        <input type="password" id="passwort" name="passwort" required>
+        <br>
+        <button type="button" onclick="submitAnmeldung()">Anmelden</button>
     </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{{ url_for('static', filename='scripts/welcome.js') }}"></script>
 </body>
 </html>
-
