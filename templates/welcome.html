@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Karteikartenprojekt</title>
 </head>
+
+<!-- Willkommenseite -->
+
 <body>
     <h1>Anki auf wish</h1>
     <p>
         Willkommen bei Anki auf wish. <br>
         Hier kannst du deine Karteikarten online verwalten. <br>
     </p>
-    <button onclick="document.location='login.html'">Anmeldung</button> <br>
+    <button onclick="goToLogin()">Anmeldung</button> 
     <br>
-    <button onclick="document.location='register.html'">Registrierung</button>
+    <button onclick="goToRegister()">Registrierung</button>
 </body>
+
+<script src="{{ url_for('static', filename='scripts/welcome.js') }}"></script>
 
 </html>
